@@ -6,22 +6,30 @@ createApp({
 
     return {
       address: "",
+      addressList: [],
       myUrl: "https://flynn.boolean.careers/exercises/api/random/mail"
     }
   },
 
   mounted(){
-    axios.get(this.myUrl)
-    .then((result) => {
+
+    for (let index = 0; index < 10; index++) {
+      axios.get(this.myUrl)
+    . then((result)=> {
       this.address = result.data.response
-      console.log(this.address)
+      this.addressList.push(this.address)
+      console.log(this.addressList)
     })
+
+    }
+    
+  
   },
 
-
-  method: {
   
-  }
+
+
+
 
 
 
