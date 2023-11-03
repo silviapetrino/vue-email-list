@@ -1,0 +1,11 @@
+{
+  "name": "vue-email-list",
+  "version": "1.0.0",
+  "description": "Attraverso l’apposita API di Boolean https://flynn.boolean.careers/exercises/api/random/mail generare 10 indirizzi email e stamparli in pagina all’interno di una lista.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "io",
+  "license": "ISC"
+}
